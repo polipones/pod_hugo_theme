@@ -3,9 +3,9 @@
 
 name = "POD"
 license = "MIT"
-licenselink = "https://github.com/adityatelange/hugo-PaperMod/blob/master/LICENSE" # TODO
+licenselink = "https://github.com/polipones/pod_hugo_theme/blob/main/LICENSE"
 description = "A fast, clean, responsive Hugo theme"
-homepage = "https://adityatelange.github.io/hugo-PaperMod/" # TODO
+homepage = "https://github.com/polipones/pod_hugo_theme"
 tags = [
   "responsive",
   "simple",
