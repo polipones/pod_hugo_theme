@@ -430,3 +430,15 @@ h6:hover .anchor {
 [dir="rtl"] .paginav .next {
     text-align: left;
 }
+
+.translated-option {
+    padding: 0 var(--gap) - 5px;
+}
+
+.translated-option a {
+    box-shadow: none;
+}
+
+.translated-option header h3 {
+    margin: 16px;
+}
