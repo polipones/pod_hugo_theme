@@ -39,6 +39,8 @@
   <div class="page-content">
     {{- partial "anchored_headings.html" .Content -}}
   </div>
+
+  {{- if or (or .Params.tags (.Param "ShowPostNavLinks")) (and .Site.Params.ShowShareButtons (ne .Params.disableShare true) ) }}
   <footer class="page-footer">
     {{- if .Params.tags }}
     <ul class="page-tags">
@@ -72,6 +74,7 @@
     {{- partial "share_icons.html" . }}
     {{- end }}
   </footer>
+  {{- end }}
 
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}

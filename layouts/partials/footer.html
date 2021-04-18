@@ -1,3 +1,4 @@
+{{- partial "extend_footer_before.html" . -}}
 <footer class="footer">
     {{- if .Site.Copyright }}
     <span>{{ .Site.Copyright | markdownify }}</span>
@@ -16,7 +17,7 @@
         </svg>
     </button>
 </a>
-{{- partial "extend_footer.html" . -}}
+{{- partial "extend_footer_after.html" . -}}
 {{- $isHLJSdisabled := (.Site.Params.assets.disableHLJS | default .Params.disableHLJS ) }}
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (not $isHLJSdisabled)) }}
 {{- if not .Site.Params.assets.disableFingerprinting }}
