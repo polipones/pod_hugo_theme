@@ -13,6 +13,11 @@
     {{ .Description }}
   </div>
   {{- end }}
+  {{- if not (.Param "hideMeta") }}
+    <div class="page-meta">
+      {{- partial "translation_list.html" . -}}
+    </div>
+  {{- end}}
 </header>
 {{- end }}
 
